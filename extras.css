@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+
+
+/* from css-tricks */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-dark: #1F2937;
+    --text-hero-main: 48px extra-bold ;
+    --color-hero-main: #F9FAF8;
+    --text-header-secondary: 18px ;
+    --color-header-secondary: #E5E7EB;
+    --text-logo: 24px;
+    --color-text-logo: #f9faf8;
+    --color-blue: #3882f6;
+    --text-info-header: 36px extra-bold;
+    --color-info-header: #1f2937;
+    --background-quote: #e5e7eb;
+    --text-quote: 36px light italic ;
+    --color-text-quote: #1f2937;
+}
