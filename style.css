@@ -1,2 +1,192 @@
 @import 'extras.css';
 
+body {
+    font-family: 'Poppins Normal', sans-serif ;
+}
+
+ul {
+    list-style: none;
+}
+
+header, .main, .info, .quote, footer, .card{
+    width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0 100px 0;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+/* header section */
+
+header {
+    background-color: var(--background-dark);
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header a:hover {
+    opacity: 0.6;
+}
+
+header ul {
+    margin-left: auto;
+    display: flex;
+    color: var(--color-header-secondary);
+}
+
+header li{
+    font: var(--text-header-secondary);
+    font-size: 18px;
+    margin-left: 12px;
+}
+
+.header-logo {
+    color: var(--color-text-logo);
+    font-size: 24px;   
+}
+
+/* main section */
+
+.main {
+    background-color: var(--background-dark);
+}
+
+.main h1 {
+    color: var(--color-hero-main);
+    font-family: 'Poppins Bold', sans-serif;
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+.main p {
+    color: var(--color-header-secondary);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main .left-side{
+    max-width: 60%;
+    margin-right: 12px;
+}
+
+.main img {
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid rgb(27, 64, 165);
+    margin-left: auto;
+    color: #fff;
+    text-align: center;
+}
+
+.main button {
+    padding: 8px 32px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--color-blue);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* info boxes section */
+
+
+.info h2 {
+    color: var(--color-info-header);
+    font-family: 'Poppins Bold', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin: 38px 0;
+}
+
+.info .flex-row {
+    gap: 42px;
+    justify-content: center;
+}
+
+.info .box {
+    flex: 0 0 180px;
+    text-align: center;
+}
+
+.info img {
+    display: block;
+    width: 180px;
+    height: 150px;
+    border: 3px solid rgba(95, 125, 209, 0.842);
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+.quote {
+    background-color:  var(--background-quote);
+    font-size: 36px;
+    font-family: 'Poppins Light Italic', sans-serif;
+}
+
+.quote .container {
+    padding: 100px 0px;
+    text-align: left;
+    line-height: 95%;
+}
+
+.quote .author {
+    text-align: right;
+    font-family: 'Poppins Bold';
+    font-size: 24px;
+    margin: 20px 50px 0 0;
+}
+
+.card .container {
+    background-color: var(--color-blue);
+    justify-content: center;
+    padding: 36px 60px;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+}
+
+.card button {
+    padding: 8px 32px;
+    margin-left: auto;
+    border-radius: 6px;
+    border: 1px solid whitesmoke;
+    background-color: var(--color-blue);
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card .header {
+    font-family: 'Poppins Bold';
+    font-size: 18px;
+}
+
+.card .header + p{
+    color: rgb(233, 233, 233);
+    font-size: 16px;
+}
+
+footer {
+    background-color: var(--background-dark);
+}
+
+footer .container {
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}

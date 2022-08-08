@@ -9,30 +9,32 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container flex-row">
             <div class="header-logo">Header Logo</div>
             <ul>
-                <li class="header-li">header link one</li>
-                <li class="header-li">header link two</li>
-                <li class="header-li">header link three</li>
+                <li class="header-li"><a href="#">Home</a></li>
+                <li class="header-li"><a href="#">About</a></li>
+                <li class="header-li"><a href="#">Contact</a></li>
             </ul>
         </div>
     </header>
     
-    <div class="main"></div>
-        <div class="container">
-            <h1>This Website is awesome</h1>
-            <p>This website has some that goes here under the main title.
-                It's smaller font size and color is lower contrast</p>
-            <button type="submit">Sign Up!</button>
-            <img src="" alt="main image">
+    <div class="main">
+        <div class="container flex-row">
+            <div class="left-side">
+                <h1>Sheeps are awesome</h1>
+                <p>This website has some that goes here under the main title.
+                    It's smaller font size and color is lower contrast</p>
+                <button type="submit">Sign Up!</button>
+            </div>
+            <img src="" alt="main image placeholder">
         </div>
     </div>
     
-    <div class="iformation">
+    <div class="info">
         <div class="container">
-            <h2>some random information</h2>
-            <div class="boxes">
+            <h2>Some awesome Sheeples</h2>
+            <div class="boxes flex-row">
                 <div class="box">
                     <img src="" alt="some image">
                     <p>this is some subtext under an illustration</p>
@@ -55,21 +57,24 @@
     
     <div class=" quote ">
         <div class="container">
-            <p>a wise man once said a wise man once said a wise man once said a wise man once said</p>
-            <p>-Thor, God of Fire</p>
+            <p>A wise man once said a wise man once said a wise man once said a wise man once said
+                wise man once said wise man once said wise man once said.</p>
+            <p class="author">-Thor, God of Fire</p>
         </div>
     </div>
 
-    <div>
-        <div class="card">
-            <p>Call to action! It's time!</p>
-            <p>Sign up for our product we only send once every week</p>
-            <button type="submit">Sing Up</button>
+    <div class="card">
+        <div class="container flex-row">
+            <div>
+                <p class="header">Call to action! It's time!</p>
+                <p>Sign up for our product we only send once every week</p>
+            </div>
+            <button type="submit" >Sign Up!</button>
         </div>
     </div>
 
     <footer>
-        <div class="container">Copyright c The Odin Project 2022</div>
+        <div class="container">Copyright c Odin Project 2022</div>
     </footer>
 </body>
 </html>

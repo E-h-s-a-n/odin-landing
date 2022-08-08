@@ -1,23 +1,34 @@
 @font-face {
-    font-family: 'Poppins Regular';
+    font-family: 'Poppins Normal';
     src: url(fonts/Poppins-Regular.ttf);
+    font-weight: 400;
 }
 
 @font-face {
     font-family: 'Poppins Medium';
     src: url(fonts/Poppins-Medium.ttf);
+    font-weight: 500;
 }
 
 @font-face {
     font-family: 'Poppins Bold';
     src: url(fonts/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins Light Italic';
+    src: url(fonts/Poppins-LightItalic.ttf);
+    font-style: italic;
+    font-weight: 300;
 }
 
 
-
-/* from css-tricks */
 *, *::before, *::after {
+    /* from css-tricks */
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -26,14 +37,14 @@ html {
 
 :root {
     --background-dark: #1F2937;
-    --text-hero-main: 48px extra-bold ;
+    --text-hero-main: 48px 800 ;
     --color-hero-main: #F9FAF8;
-    --text-header-secondary: 18px ;
+    --text-header-secondary: 18px;
     --color-header-secondary: #E5E7EB;
     --text-logo: 24px;
     --color-text-logo: #f9faf8;
     --color-blue: #3882f6;
-    --text-info-header: 36px extra-bold;
+    --text-info-header: 36px 800;
     --color-info-header: #1f2937;
     --background-quote: #e5e7eb;
     --text-quote: 36px light italic ;
