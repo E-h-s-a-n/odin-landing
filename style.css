@@ -63,6 +63,7 @@ header li:hover {
     background-color: var(--background-dark);
 }
 
+
 .main h1 {
     color: var(--color-hero-main);
     font-family: 'Poppins Bold', sans-serif;
@@ -81,14 +82,21 @@ header li:hover {
     margin-right: 12px;
 }
 
-.main img {
+.main .image {
     width: 350px;
-    height: 300px;
-    border-radius: 10px;
-    border: 2px solid rgb(27, 64, 165);
+    border-radius: 30px;
     margin-left: auto;
-    color: #fff;
-    text-align: center;
+    /* box-shadow:  12px 12px 28px #075023, -12px -12px 28px #094d6d; */
+
+    filter: drop-shadow(5px 5px 12px rgb(3, 95, 15));
+}
+
+.main img {
+    max-width: 100%;
+    border: none;
+    border-radius: 30px;
+    object-fit: cover;
+    
 }
 
 .main button {
@@ -112,20 +120,19 @@ header li:hover {
 }
 
 .info .flex-row {
-    gap: 42px;
+    gap: 38px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .info .box {
-    flex: 0 0 180px;
+    flex: 1 0 200px;
     text-align: center;
 }
 
 .info img {
     display: block;
-    width: 180px;
-    height: 150px;
-    border: 3px solid rgba(95, 125, 209, 0.842);
+    width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
 }
