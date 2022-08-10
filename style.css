@@ -24,7 +24,7 @@ header, .main, .info, .quote, footer, .card{
     align-items: center;
 }
 
-/* header section */
+/* Header Section */
 
 header {
     background-color: var(--background-dark);
@@ -33,10 +33,6 @@ header {
 header a {
     text-decoration: none;
     color: inherit;
-}
-
-header a:hover {
-    opacity: 0.6;
 }
 
 header ul {
@@ -48,7 +44,12 @@ header ul {
 header li{
     font: var(--text-header-secondary);
     font-size: 18px;
-    margin-left: 12px;
+    margin-left: 24px;
+}
+
+header li:hover {
+    transform: scale(1.05);
+    opacity: 0.7;
 }
 
 .header-logo {
@@ -56,7 +57,7 @@ header li{
     font-size: 24px;   
 }
 
-/* main section */
+/* Main Section */
 
 .main {
     background-color: var(--background-dark);
@@ -91,7 +92,7 @@ header li{
 }
 
 .main button {
-    padding: 8px 32px;
+    padding: 10px 32px;
     border-radius: 6px;
     border: none;
     background-color: var(--color-blue);
@@ -100,8 +101,7 @@ header li{
     font-weight: 600;
 }
 
-/* info boxes section */
-
+/* Info Boxes Section */
 
 .info h2 {
     color: var(--color-info-header);
@@ -128,8 +128,9 @@ header li{
     border: 3px solid rgba(95, 125, 209, 0.842);
     border-radius: 8px;
     margin-bottom: 10px;
-
 }
+
+/* Quote Section */
 
 .quote {
     background-color:  var(--background-quote);
@@ -149,6 +150,8 @@ header li{
     font-size: 24px;
     margin: 20px 50px 0 0;
 }
+
+/* Card Section */
 
 .card .container {
     background-color: var(--color-blue);
@@ -180,6 +183,8 @@ header li{
     color: rgb(233, 233, 233);
     font-size: 16px;
 }
+
+/* Footer Section */
 
 footer {
     background-color: var(--background-dark);
