@@ -14,7 +14,7 @@ header, .main, .info, .quote, footer, .card{
 
 .container {
     max-width: 1100px;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     padding: 20px 0 100px 0;
 }
@@ -38,13 +38,15 @@ header a {
 header ul {
     margin-left: auto;
     display: flex;
+    justify-content: flex-start;
+    gap:20px;
     color: var(--color-header-secondary);
 }
 
 header li{
     font: var(--text-header-secondary);
     font-size: 18px;
-    margin-left: 24px;
+    
 }
 
 header li:hover {
@@ -80,14 +82,13 @@ header li:hover {
 .main .left-side{
     max-width: 60%;
     margin-right: 12px;
+    margin-bottom: 12px;
 }
 
 .main .image {
     width: 350px;
     border-radius: 30px;
     margin-left: auto;
-    /* box-shadow:  12px 12px 28px #075023, -12px -12px 28px #094d6d; */
-
     filter: drop-shadow(5px 5px 12px rgb(3, 95, 15));
 }
 
@@ -96,7 +97,6 @@ header li:hover {
     border: none;
     border-radius: 30px;
     object-fit: cover;
-    
 }
 
 .main button {
@@ -201,4 +201,30 @@ footer .container {
     color: whitesmoke;
     text-align: center;
     padding: 20px;
+}
+
+@media screen and (max-width: 35em) {
+    header .container {
+        display: block;
+    }
+
+    .main .container {
+        display: block;
+    }
+
+    .main .left-side{
+        max-width: 100%;
+    }
+
+    .main .image {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .card .container {
+        display: block;
+    }
+    .card button {
+        margin-top: 1em;
+    }
 }
