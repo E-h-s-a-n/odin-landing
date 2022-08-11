@@ -56,7 +56,7 @@ header li:hover {
 
 .header-logo {
     color: var(--color-text-logo);
-    font-size: 24px;   
+    font-size: 24px;
 }
 
 /* Main Section */
@@ -203,9 +203,13 @@ footer .container {
     padding: 20px;
 }
 
-@media screen and (max-width: 35em) {
+@media screen and (max-width: 600px) {
     header .container {
         display: block;
+    }
+
+    header .header-logo {
+        margin-bottom: 12px;
     }
 
     .main .container {
